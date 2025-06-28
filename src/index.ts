@@ -1,3 +1,9 @@
-// alex-frontend-backend/api/index.ts
+// api/src/index.ts
 import app from './app';
-export default app;
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`✅ Server avviato su http://localhost:${PORT}`);
+});
+
