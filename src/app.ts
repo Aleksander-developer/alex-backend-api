@@ -16,6 +16,7 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: function (origin, callback) {
+    console.log('Origin richiesta:', origin);
     if (!origin) return callback(null, true);
     if (allowedOrigins.includes(origin)) return callback(null, true);
     console.log("CORS origin non permessa:", origin);
@@ -23,6 +24,7 @@ app.use(cors({
   },
   credentials: true
 }));
+
 
 app.options('*', cors());
 
