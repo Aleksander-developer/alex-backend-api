@@ -1,3 +1,4 @@
+// api/src/controllers/newsletter.controller.ts
 import { Request, Response } from 'express';
 import { Newsletter } from '../models/newsletter.model';
 import { sendConfirmationEmail } from '../utils/email';

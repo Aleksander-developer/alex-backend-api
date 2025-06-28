@@ -1,4 +1,4 @@
-// src/models/contatto.model.ts
+// api/src/models/contatto.model.ts
 import mongoose from 'mongoose';
 
 const contattoSchema = new mongoose.Schema({

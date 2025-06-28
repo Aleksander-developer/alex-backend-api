@@ -1,4 +1,4 @@
-// src/models/progetto.model.ts
+// api/src/models/progetto.model.ts
 import mongoose from 'mongoose';
 
 const progettoSchema = new mongoose.Schema({

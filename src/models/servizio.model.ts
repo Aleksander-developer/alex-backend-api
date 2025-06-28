@@ -1,4 +1,4 @@
-// src/models/servizio.model.ts
+// api/src/models/servizio.model.ts
 import mongoose from 'mongoose';
 
 const servizioSchema = new mongoose.Schema({

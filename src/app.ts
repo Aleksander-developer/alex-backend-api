@@ -4,9 +4,9 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import { connectDB } from './config/db.config';
 import apiRoutes from './routes';
-import newsletterRoutes from './routes/newsletter.routes';
 
 dotenv.config();
+
 const app = express();
 
 const allowedOrigins = [
@@ -24,12 +24,12 @@ app.use(cors({
   credentials: true
 }));
 
-app.options('*', cors());  // <-- molto importante per preflight
+app.options('*', cors());
 
 app.use(express.json());
 
+// Usa solo il router aggregatore su '/api'
 app.use('/api', apiRoutes);
-app.use('/api', newsletterRoutes);
 
 (async () => {
   await connectDB();

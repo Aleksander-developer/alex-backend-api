@@ -1,4 +1,4 @@
-// src/models/chisono.model.ts
+// api/src/models/chisono.model.ts
 import mongoose from 'mongoose';
 
 const chiSonoSchema = new mongoose.Schema({

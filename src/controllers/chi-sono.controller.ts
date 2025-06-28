@@ -1,4 +1,4 @@
-// src/controllers/chi-sono.controller.ts
+// api/src/controllers/chi-sono.controller.ts
 import { Request, Response } from 'express';
 import { ChiSono } from '../models/chi-sono.model';
 

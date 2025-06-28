@@ -1,4 +1,4 @@
-// alex-frontend-backend/api/src/routes/index.ts
+// api/src/routes/index.ts
 // <-- Importa e aggrega tutte le rotte qui
 
 import express from 'express';
@@ -7,7 +7,6 @@ import progettiRoutes from './progetti.routes';
 import chiSonoRoutes from './chi-sono.routes';
 import contattiRoutes from './contatti.routes';
 import serviziRoutes from './servizi.routes';
-
 
 const router = express.Router();
 

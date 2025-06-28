@@ -1,4 +1,4 @@
-// src/models/newsletter.model.ts
+// api/src/models/newsletter.model.ts
 import mongoose from 'mongoose';
 
 const NewsletterSchema = new mongoose.Schema(

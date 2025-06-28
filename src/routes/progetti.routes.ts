@@ -1,4 +1,4 @@
-// src/routes/progetti.routes.ts
+// api/src/routes/progetti.routes.ts
 import express from 'express';
 import { getProgetti, getProgettoById } from '../controllers/progetti.controller';
 
