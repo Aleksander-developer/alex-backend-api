@@ -69,3 +69,21 @@ EMAIL_PASS=iogjdwjoqoxojgck
 Nel terminale, avvia l'app con: npm run dev
 
 */
+
+/*
+
+github dove si trova il frontend
+https://github.com/Aleksander-developer/alex-frontend.git
+
+github dove si trova backend
+https://github.com/Aleksander-developer/alex-backend-api.git
+
+render prende backend da github
+https://alex-backend-api.onrender.com
+
+netlify prende il frontend da github
+https://aleksandernikolli.netlify.app/
+
+il database è su mongodb Atlas
+mongodb+srv://<db_username>:<db_password>@cluster0.dmmhwoj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+*/

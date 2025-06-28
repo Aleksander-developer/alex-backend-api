@@ -31,5 +31,9 @@ app.use('/api', newsletterRoutes);
 
 // ⛔️ RIMUOVI app.listen()
 // ✅ Esporta direttamente Express app (senza avviare server)
-connectDB(); // Non è async, quindi non blocca la response
+// connectDB(); // Non è async, quindi non blocca la response
+(async () => {
+  await connectDB();
+})();
+
 export default app;
