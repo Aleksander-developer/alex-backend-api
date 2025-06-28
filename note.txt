@@ -87,3 +87,11 @@ https://aleksandernikolli.netlify.app/
 il database è su mongodb Atlas
 mongodb+srv://<db_username>:<db_password>@cluster0.dmmhwoj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 */
+
+/*
+npm run build → builda il progetto TypeScript in dist/
+git add . → aggiunge tutte le modifiche
+git commit -m "Build e aggiornamenti backend" → crea il commit
+git push origin main → push sul branch main su GitHub
+
+*/
