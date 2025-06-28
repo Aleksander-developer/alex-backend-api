@@ -1,15 +1,15 @@
 // api/src/models/newsletter.model.ts
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
 
-const NewsletterSchema = new mongoose.Schema(
-  {
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-  },
-  { timestamps: true }
-);
+// const NewsletterSchema = new mongoose.Schema(
+//   {
+//     email: {
+//       type: String,
+//       required: true,
+//       unique: true,
+//     },
+//   },
+//   { timestamps: true }
+// );
 
-export const Newsletter = mongoose.model('Newsletter', NewsletterSchema);
+// export const Newsletter = mongoose.model('Newsletter', NewsletterSchema);
