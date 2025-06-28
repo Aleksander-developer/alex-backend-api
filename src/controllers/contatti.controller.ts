@@ -35,7 +35,7 @@ export const inviaMessaggio = async (req: Request, res: Response) => {
     const mailToAdmin = {
       from: `"Modulo Contatti" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_DESTINATION,
-      subject: '📩 Nuovo messaggio dal modulo contatti',
+      subject: ' Nuovo messaggio dal modulo contatti',
       html: `
         <h2>Hai ricevuto un nuovo messaggio</h2>
         <p><strong>Nome:</strong> ${nome}</p>
@@ -50,7 +50,7 @@ export const inviaMessaggio = async (req: Request, res: Response) => {
     const mailToUser = {
       from: `"${process.env.SITE_NAME || 'Il tuo sito'}" <${process.env.EMAIL_USER}>`,
       to: email,
-      subject: '✅ Conferma ricezione messaggio',
+      subject: ' Conferma ricezione messaggio',
       html: `
         <p>Ciao ${nome},</p>
         <p>Grazie per averci contattato. Abbiamo ricevuto il tuo messaggio e ti risponderemo al più presto.</p>

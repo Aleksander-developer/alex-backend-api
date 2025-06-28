@@ -5,6 +5,6 @@ import { getProgetti, getProgettoById } from '../controllers/progetti.controller
 const router = express.Router();
 
 router.get('/', getProgetti);
-router.get('/:id', getProgettoById);
+// router.get('/:id', getProgettoById);
 
 export default router;
