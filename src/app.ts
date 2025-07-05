@@ -1,16 +1,16 @@
-// api/src/app.ts (Reintroduzione apiRoutes)
+// api/src/app.ts 
     import express from 'express';
     import dotenv from 'dotenv';
     import cors from 'cors';
     import { connectDB } from './config/db.config';
-    import apiRoutes from './routes'; // --- SCOMMENTA QUESTA RIGA ---
+    import apiRoutes from './routes'; 
 
     dotenv.config();
 
     const app = express();
 
     const allowedOrigins = [
-      'https://aleksandernikolli.netlify.app',
+      'https://aleksander-nikolli-developer.netlify.app',
       'http://localhost:4200'
     ];
 
