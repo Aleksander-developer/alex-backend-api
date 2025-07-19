@@ -22,3 +22,4 @@ export const sendConfirmationEmail = async (to: string) => {
 
   await transporter.sendMail(mailOptions);
 };
+

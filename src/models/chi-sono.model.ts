@@ -7,3 +7,4 @@ const chiSonoSchema = new mongoose.Schema({
 });
 
 export const ChiSono = mongoose.model('ChiSono', chiSonoSchema);
+

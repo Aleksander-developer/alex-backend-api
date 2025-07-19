@@ -10,3 +10,4 @@ export const getServizi = async (_req: Request, res: Response) => {
     res.status(500).json({ message: 'Errore recupero servizi', error });
   }
 };
+
