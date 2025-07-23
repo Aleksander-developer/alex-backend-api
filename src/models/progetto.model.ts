@@ -12,3 +12,4 @@ const progettoSchema = new mongoose.Schema({
 });
 
 export const Progetto = mongoose.model('Progetto', progettoSchema);
+

@@ -10,7 +10,7 @@
     const app = express();
 
     const allowedOrigins = [
-      'https://aleksander-nikolli-developer.netlify.app',
+      'https://aleksandernikolli.com',
       'http://localhost:4200'
     ];
 

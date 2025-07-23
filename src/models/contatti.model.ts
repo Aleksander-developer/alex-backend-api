@@ -10,3 +10,4 @@ const contattoSchema = new mongoose.Schema({
 });
 
 export const Contatto = mongoose.model('Contatto', contattoSchema);
+

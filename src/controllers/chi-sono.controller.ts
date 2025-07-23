@@ -10,3 +10,4 @@ export const getProfilo = async (_req: Request, res: Response) => {
     res.status(500).json({ message: 'Errore caricamento profilo', error });
   }
 };
+

@@ -8,3 +8,4 @@ const servizioSchema = new mongoose.Schema({
 });
 
 export const Servizio = mongoose.model('Servizio', servizioSchema);
+
