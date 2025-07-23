@@ -1,31 +1,5 @@
-<<<<<<< HEAD
-// api/src/controllers/progetti.controller.ts
-import { Request, Response } from 'express';
-import { Progetto } from '../models/progetto.model';
 
-export const getProgetti = async (req: Request, res: Response) => {
-  try {
-    const progetti = await Progetto.find();
-    res.json(progetti);
-  } catch (error) {
-    res.status(500).json({ message: 'Errore recupero progetti', error });
-  }
-};
 
-export const getProgettoById = async (req: Request, res: Response): Promise<void> => {
-  try {
-    const progetto = await Progetto.findById(req.params.id);
-    if (!progetto) {
-      res.status(404).json({ message: 'Progetto non trovato' });
-      return;
-    }
-    res.json(progetto);
-  } catch (error) {
-    res.status(500).json({ message: 'Errore recupero progetto', error });
-  }
-};
-
-=======
 // api/src/controllers/progetti.controller.ts
 import { Request, Response } from 'express';
 import { Progetto, IProgetto } from '../models/progetto.model'; // Importa l'interfaccia IProgetto
@@ -122,4 +96,4 @@ export const createProgetto = async (req: Request, res: Response) => {
 // TODO: Aggiungi qui i controller per updateProgetto e deleteProgetto
 // export const updateProgetto = async (req: Request, res: Response) => { ... };
 // export const deleteProgetto = async (req: Request, res: Response) => { ... };
->>>>>>> 7cf6ab218ab5b40df2bcf973891236ea2417004b
+

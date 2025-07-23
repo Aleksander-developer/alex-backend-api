@@ -1,20 +1,5 @@
-<<<<<<< HEAD
-// api/src/models/progetto.model.ts
-import mongoose from 'mongoose';
 
-const progettoSchema = new mongoose.Schema({
-  titolo: { type: String, required: true },
-  descrizione: String,
-  tecnologie: [String],
-  linkDemo: String,
-  linkRepo: String,
-  immagine: String,
-  data: { type: Date, default: Date.now }
-});
 
-export const Progetto = mongoose.model('Progetto', progettoSchema);
-
-=======
 // api/src/models/progetto.model.ts
 import mongoose, { Document, Schema } from 'mongoose';
 
@@ -118,4 +103,4 @@ const progettoSchema = new Schema<IProgetto>({
 });
 
 export const Progetto = mongoose.model<IProgetto>('Progetto', progettoSchema);
->>>>>>> 7cf6ab218ab5b40df2bcf973891236ea2417004b
+
