@@ -13,9 +13,11 @@ const allowedOrigins = [
   'https://aleksandernikolli.com',
   'https://www.aleksandernikolli.com',
   'https://aleksander-nikolli-portfolio.netlify.app',
-  'http://localhost:4200', // <--- FONDAMENTALE: Per il frontend locale (dove gira ng serve)
-  'http://localhost:10000', // <--- FONDAMENTALE: Per il backend locale stesso (se lo chiami da lì)
-  'https://alex-backend-api.onrender.com' // L'URL pubblico del tuo backend su Render
+  'http://localhost:4200', // Frontend locale (ng serve)
+  'http://localhost:10000', // Backend locale (se lo chiami da lì)
+  'https://alex-backend-api.onrender.com', // L'URL pubblico del tuo backend su Render (anche se non è l'origine di una richiesta, averlo non fa male)
+  // ✅ NUOVO: L'URL pubblico del tuo frontend su Render
+  'https://aleksandernikolliportfolio.onrender.com' 
 ];
 
 app.use(cors({
@@ -33,22 +35,17 @@ app.use(cors({
       return callback(new Error(`Accesso CORS non consentito da questo dominio: ${origin}`), false);
     }
   },
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // <--- AGGIUNTO: Metodi HTTP consentiti
-  credentials: true, // Se gestisci cookie o sessioni
-  optionsSuccessStatus: 204 // <--- AGGIUNTO: Status per le richieste pre-flight OPTIONS
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
 }));
 
 // Lascia questa riga commentata, ha causato il problema!
 // app.options('*', cors());
 
 app.use(express.json());
-app.use('/api', apiRoutes); // Assicurati che questa riga sia SCOMMENTATA
+app.use('/api', apiRoutes); 
 
 (async () => { await connectDB(); })();
-
-// Puoi eliminare questa rotta di test ora che il server si avvia
-// app.get('/', (req, res) => {
-//   res.send('Server Express minimo avviato con successo!');
-// });
 
 export default app;
