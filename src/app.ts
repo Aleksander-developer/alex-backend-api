@@ -15,9 +15,9 @@ const allowedOrigins = [
   'https://aleksander-nikolli-portfolio.netlify.app',
   'http://localhost:4200', // Frontend locale (ng serve)
   'http://localhost:10000', // Backend locale (se lo chiami da lì)
-  'https://alex-backend-api.onrender.com', // L'URL pubblico del tuo backend su Render (anche se non è l'origine di una richiesta, averlo non fa male)
+  'https://alex-backend-api-1046780610179.europe-west1.run.app', // L'URL pubblico del tuo backend su Render (anche se non è l'origine di una richiesta, averlo non fa male)
   // ✅ NUOVO: L'URL pubblico del tuo frontend su Render
-  'https://aleksandernikolliportfolio.onrender.com' 
+  'https://aleksandernikolliportfolio-1046780610179.europe-west1.run.app/' 
 ];
 
 app.use(cors({
