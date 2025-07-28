@@ -17,7 +17,7 @@ const allowedOrigins = [
   // 'http://localhost:10000',
   // 'https://alex-backend-api.onrender.com',
   // 'https://aleksandernikolliportfolio.onrender.com',
-  'https://aleksandernikolliportfolio-1046780610179.europe-west1.run.app/' // ✅ NUOVO: L'URL pubblico del tuo frontend su Cloud Run
+  'https://aleksandernikolliportfolio-1046780610179.europe-west1.run.app' // ✅ NUOVO: L'URL pubblico del tuo frontend su Cloud Run
 ];
 
 app.use(cors({
